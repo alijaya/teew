@@ -1,0 +1,16 @@
+Okay... this is just another tween library...
+I make it so it can support chaining method, and no need to make an instance.
+
+so when you want to ease a sprite from (10, 25) to (40, 100) in 100 tick, you may want to write this
+
+Teew.tween(sprite, 100).fromTo("x", 10, 40).fromTo("y", 25, 100);
+
+and may be you want to move the y property down to 120 in 50 tick when the above action finish, write like this
+
+Teew.tween(sprite, 100).fromTo("x", 10, 40).fromTo("y", 25, 100).next(50).to("y", 120);
+
+you can sequence many tween with next function...
+
+hmmm...
+
+so, just hit the wiki and see the Getting Started
